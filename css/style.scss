@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.App{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: clamp(1rem, 1.3vw, 3rem)
+}
+
+/* logo */
+header img {
+    width: 30vw;
+    margin: 0px;
+}
+
+/* Navigation links */
+nav {
+    border-bottom: 1px solid #808080
+}
+
+li {
+    display: inline-block;
+    margin: 5px 10px;  
+}
+
+.text-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.text-link:hover {
+    color: #ffd23f;
+}
+
+/* Book Now button */
+#booking {
+    background-color: #ffd23f;
+    padding: 5px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#booking:hover {
+    background-color: #92b9bd;
+}

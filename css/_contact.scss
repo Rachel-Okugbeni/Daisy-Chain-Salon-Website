@@ -6,19 +6,19 @@
     width: 100%;
     height: 65vh;
     justify-content: center;
-   }
 
-.contact-box {
-    height: 65vh;
-    width: 20%;
-    min-width: 300px;
-    padding: 0 20px;
-    margin: 10px;
-}
+    .contact-box {
+        height: 65vh;
+        width: 20%;
+        min-width: 300px;
+        padding: 0 20px;
+        margin: 10px;
+    }
 
-#hours table{
-    border-spacing: 0 20px;
-    width: 100%;
+    #hours table{
+        border-spacing: 0 20px;
+        width: 100%;
+    }
 }
 
 /* View map button */
@@ -29,9 +29,9 @@
     border-radius: 5px;
     font-size: 1.2rem;
     text-decoration: none;
-}
-.viewMap:hover {
-    background-color: $secondary-color;
+    &:hover {
+        background-color: $secondary-color;
+    }
 }
 
 /* Images either side of contact info */

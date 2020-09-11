@@ -1,7 +1,7 @@
-//Google fonts
+/*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-//Variables
+/*Variables */
 $montserrat: 'Montserrat', sans-serif;
 $font-color: #000000;
 $primary-color: #ffd23f;
@@ -14,12 +14,12 @@ body {
     font-size: 20px;
 }
 
-// logo image
+/* logo image */
 .logo {
     width: 30vw;
     margin: 0px;
 }
-// Navigation links
+/* Navigation links */
 nav {
     ul {
         text-align: center;
@@ -34,7 +34,7 @@ nav {
                     color: $primary-color;
                 }
             }
-            // Book Now button
+            /* Book Now button */
             #booking {
                 background-color: $primary-color;
                 padding: 5px;
@@ -49,7 +49,7 @@ nav {
 }
 
 
-//main image
+/* main image */
 .hero-image {
     width: 100%; 
     height: 30vh;  
@@ -60,7 +60,7 @@ nav {
     }
 }
 
-//About copy
+/* About copy */
 .about {
     margin: 1%;
     width: 95%;

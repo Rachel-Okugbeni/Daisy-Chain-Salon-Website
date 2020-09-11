@@ -1,0 +1,13 @@
+.gallery {
+    margin: 10px 50px;
+    img {
+        transition: 0.5s;
+        padding: 15px;
+        width: 20vw;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            opacity: 0.5;
+        }
+    }
+}

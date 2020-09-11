@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Daisy Chain Hair & Beauty</title>
+</head>
+<body>
+    <header>
+      <!-- Logo & Nav bar -->
+      <div id="nav-placeholder">
+      </div>     
+    </header>
+
+    <div class="contact">
+        <!-- Image to left of contact info -->
+        <div class="contact-box" id="sideImg1"></div> 
+
+        <div class="contact-box" id="address">
+            <h1>How To Find Us</h1>
+            <p>88 Guild Street</p>
+            <p>LONDON</p>
+            <p>EC3N 2EJ</p>
+            <p>020 7946 0137</p>
+            <p>enquire@daisychain.co.uk</p>
+           <a target="_blank" href="https://goo.gl/maps/36bVnYdbYcADXLiN7" class="viewMap">VIEW ON MAP</a>
+        </div>  
+
+        <div  class="contact-box" id="hours">
+            <h1>Opening Hours</h1>
+            <table>
+            <tr>
+                <td>Mon-Thur</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>08:00 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>CLOSED</td>
+            </tr>
+            </table>
+        </div>
+         <!-- Image to right of contact info -->
+        <div class="contact-box" id="sideImg2"></div> 
+    </div>
+
+<!-- Link to nav.html -->
+<script>
+    $(function(){
+      $("#nav-placeholder").load("./nav.html");
+    });
+</script>
+</body>
+</html>

@@ -5,32 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Daisy Chain Hair & Beauty</title>
 </head>
 <body>
     <header>
-        <img src='./assets/Home_Logo.png' alt="Daisy Chain Hair & Beauty Logo" class="logo"></img> 
-        <div>
-            <nav>
-              <ul>
-                <li>
-                  <a href="/" id="home">Home</a>
-                </li>
-                <li>
-                  <a href=="/services" id="services">Services</a>
-                </li>
-                <li>
-                  <a href="/gallery" id="gallery">Gallery</a>
-                </li>
-                <li>
-                  <a href="/contact"  id="contact">Contact</a>
-                </li>
-                <li>
-                  <a href="/booking" id="booking">BOOK</a>
-                </li>
-              </ul>
-            </nav>
-        </div>
+      <!-- Logo & Nav bar -->
+      <div id="nav-placeholder">
+      </div>
+      <script>
+      $(function(){
+        $("#nav-placeholder").load("./html/nav.html");
+      });
+      </script>
     </header>
 
   <div class="hero-image">

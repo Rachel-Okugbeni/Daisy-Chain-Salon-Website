@@ -6,158 +6,155 @@
     box-sizing: border-box;
     margin: 10px 0;
     padding: 0;
-}
-
-/* Overall container */
-.form-container {
-    display: grid;
-    grid-template-areas: "left right";
-    max-width: 85vw;
-    height: 63vh;
-}
-
-/* left side with image container */
-.left-container {
-    overflow: hidden;
-    background-image: url('../assets/BookingImg.jpg');
-    background-size: cover;
-    width: 40vh;
-}
-
-/* form container - right side */
-.right-container {
-    background: $secondary-color;
-    display: grid;
-    width: 40vw;
-    padding: 0 2px;
-}
-
-.form-header {
-    font-size: 2rem;
-}
-
-/* form element rows */
-.set {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;   
-    padding: 0;
-}
-
-.set input {
-    margin: 0 10px;
-}
-
-.message-set {
-    padding: 0 px;
-}
-
-#message {
-    width: 95%;
-    height: 15vh;
-    border-radius: 4px;
-    border: none;
-}
-
-input,
-select {
-    border-radius: 4px;
-    border: 1px solid transparent;
-    line-height: 3.5vh;
-    height: 3.5vh;
-    display: inline-block;
-    padding: 5px;
-    font-family: inherit;
-}
-
-label {
-    display: block;
-    text-align: left;
-    margin-left: 10px;
-    padding: 2px;
-}
-
-/* bridal checkbox */
-#bridal,
-#bridalLabel {
-    display: inline-block;
-    vertical-align: middle;
-    height: 2vh;
-    line-height: 2vh;
-    padding: 5px 0;
-}
-
-.dates input {
-    min-width: 8vw;
-    height: 3.4vh;
-}
-
-.times select {
-    height: 5vh;
-}
-
-.times label {
-margin: 0;
-}
-
-/*services selector */
-.radio-container {
-    background: #fff;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 5px;
-    margin-left: 10px;
-    min-width: 13vw;
-}
-
-.radio-container label {
-    background: transparent;
-    border: none;
-    border-radius: 2px;
-    display: inline-block;
-    height: 3vh;
-    line-height: 3vh;
-    text-align: center;
-    transition: .2s all ease-in-out;
-    min-width: 4vw;
-    margin: 0;
-}
-
-.radio-container input[type="radio"] {
-    display: none;
-}
-
-.radio-container input[type="radio"]:checked + label {
-    background: $primary-color;
-}
-/* Submit button */
-button {
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-    background-color:$primary-color;
-    font-family: inherit;
-    font-weight: bold;
-    margin: 5px;
-}
-
-button:hover{
-    background-color: darken($primary-color, 20%);
-    cursor: pointer
-}
-
-/* Mobile styles (Tablet and smaller) - removes side images */
-@media only screen and (max-width: 767px) {
-.left-container
-    {
-        display: none;
+    
+    .booking-container {
+        /* Overall container */
+        display: flex;
+        width: 60vw;
+        height: auto;
+        border-radius: 10px;
+        padding: 0 5px 0 0;
+        background-color: lighten($secondary-color, 10%);
+        box-shadow: 5px 5px darken($secondary-color, 5%);
+       
+        .left-container {
+            /* left side with image container */
+            background-image: url('../assets/BookingImg.jpg');
+            background-size: cover;
+            min-width: 40vh;
+            border-radius: 10px 0 0 10px;
+        }
+        
+        .right-container {
+            /* right container side with form */
+            background: lighten($secondary-color, 10%);
+            display: flex;
+            padding: 0 20px;
+            border-radius: 0 10px 10px 0;
+            
+            form {
+                /*Form styling */
+                padding: 10px;
+                margin-top: 20px;
+                min-height: 80%;
+                .form-header {
+                    font-size: 2rem;
+                }
+                .set {
+                    /* form element rows */
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 10px;
+                    input,
+                    select {
+                        margin: 0 10px;
+                        border-radius: 4px;
+                        border: 1px solid transparent;
+                        height: 3.5vh;
+                        display: inline-block;
+                        padding: 5px;
+                        font-family: inherit;
+                    }
+                    label {
+                        display: block;
+                        text-align: left;
+                        margin-left: 10px;
+                        padding: 2px;
+                    }
+                    
+                    #message {
+                        /*Message textarea */
+                        margin-left: 10px;
+                        width: 35vw;
+                        min-width: 200px;
+                        height: 15vh;
+                        min-height: 150px;
+                        border-radius: 4px;
+                        border: none;
+                    } 
+                }            
+                .serviceType {
+                    .radio-container {
+                        /*services selector */
+                        background: #fff;
+                        border-radius: 4px;
+                        display: inline-block;
+                        padding: 5px;
+                        margin-left: 10px;
+                        width: 13vw;
+                        min-width: 200px;
+                        label {
+                            background: transparent;
+                            border: none;
+                            border-radius: 2px;
+                            display: inline-block;
+                            height: 3vh;
+                            line-height: 3vh;
+                            text-align: center;
+                            transition: .2s all ease-in-out;
+                            width: 4vw;
+                            min-width: 60px;
+                            margin: 0;
+                        }
+                        input[type="radio"] {
+                            display: none;
+                        }
+                        input[type="radio"]:checked + label {
+                            background: $primary-color;
+                        }                     
+                    }
+                        #bridal,
+                        #bridalLabel {
+                            /* bridal checkbox */
+                            display: inline-block;
+                            vertical-align: middle;
+                            height: 2vh;
+                            line-height: 2vh;
+                            padding: 5px 0;
+                        }
+                }
+                    .dates input {
+                        min-width: 8vw;
+                        height: 3.3vh;
+                    }
+                    .times {
+                        select {
+                            height: 4.6vh;
+                            min-height: 30px;
+                        }
+                    }
+                button {
+                     /* Submit button */
+                    padding: 20px;
+                    border-radius: 4px;
+                    border: none;
+                    background-color:$primary-color;
+                    font-family: inherit;
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin: 5px;
+                    &:hover{
+                        background-color: darken($primary-color, 20%);
+                        cursor: pointer
+                    }                
+                }
+            }
+        }
     }
+}
 
-    .right-container {
-        width: 85%;
-        justify-self: center;
-        margin-left: 10px;
+/* Mobile styles (Tablet and smaller)*/
+@media only screen and (max-width: 768px) {
+    .booking-container {
+        .left-container {
+            display: none;
+        }
+        .right-container {
+            border-radius: 10px;
+            .set div {
+                margin: 5px 0;
+            }
+        }
     }
-
 }
 

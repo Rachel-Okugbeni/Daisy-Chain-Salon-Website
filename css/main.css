@@ -108,65 +108,54 @@ nav ul li #booking:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* Image container - flex item */
 }
 
-.services .services-block {
-  position: relative;
-  z-index: 1;
-  -ms-flex-preferred-size: 30vw;
-      flex-basis: 30vw;
+.services .service-block {
+  background-color: #c2d8da;
+  width: 30vw;
   min-width: 350px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: 55vh;
+  min-height: 55vh;
+  padding: 10px;
   margin: 10px;
-  margin-bottom: 0;
-  /* Background images */
-  /*Price list overlay */
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 5px 5px #82afb3;
+          box-shadow: 5px 5px #82afb3;
 }
 
-.services .services-block #hair {
-  background-image: url(../assets/Services_Hair.jpg);
-  background-size: cover;
-  background-position: center;
+.services .price-list {
+  width: 100%;
+  min-height: 30vh;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.services .services-block #face {
-  background-image: url(../assets/Services_Face.jpg);
-  background-size: cover;
-  background-position: center;
+.services .price-list span {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
-.services .services-block #nails {
-  background-image: url(../assets/Services_Nails.jpg);
-  background-size: cover;
-  background-position: center;
+.services .price-list .description {
+  text-align: left;
 }
 
-.services .services-block .price-list {
-  background-color: #fff;
-  opacity: 70%;
-  position: relative;
-  top: 10%;
-  left: 15%;
-  width: 20vw;
-  min-width: 250px;
-  border-spacing: 0 5px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.services .services-block .table-header {
-  font-size: 30px;
+.services .price-list .table-header {
+  font-size: 2rem;
+  background-color: #ffd859;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px #f2b900;
+          box-shadow: 3px 3px #f2b900;
 }
 
 /* extra info banner along bottom */
 .info {
-  background-color: #ffd23f;
-  opacity: 80%;
+  background-color: #ffd859;
   text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px #f2b900;
+          box-shadow: 5px 5px #f2b900;
 }
 
 .gallery {

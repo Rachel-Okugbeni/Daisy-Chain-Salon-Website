@@ -6,60 +6,44 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    /* Image container - flex item */
-    .services-block{
-        position: relative;
-        z-index: 1;
-        flex-basis: 30vw;
+    .service-block {
+       background-color: lighten($secondary-color, 15%);
+        width: 30vw;
         min-width: 350px;
-        align-self: center;
-        height: 55vh;
+        min-height: 55vh;
+        padding: 10px;
         margin: 10px;
-        margin-bottom: 0;
-            
-        /* Background images */
-        #hair.services-block {
-            background-image: url('../assets/Services_Hair.jpg');
-            background-size: cover;
-            background-position: center;
+        border-radius: 10px;
+        justify-content: center;
+        box-shadow: 5px 5px darken($secondary-color, 5%);
+    }
+    .price-list {
+        width: 100%;
+        min-height: 30vh;
+        padding: 10px;
+        border-radius: 10px;
+        span {
+            font-size: 0.8rem;
+            font-style: italic;
         }
-
-        #face.services-block {
-            background-image: url('../assets/Services_Face.jpg');
-            background-size: cover;
-            background-position: center;
+        
+        .description {
+            text-align: left;
         }
-
-        #nails.services-block {
-            background-image: url('../assets/Services_Nails.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        /*Price list overlay */
-        .price-list {
-            background-color: #fff;
-            opacity: 70%;
-            position: relative;
-            top: 10%;
-            left: 15%;
-            width: 20vw;
-            min-width: 250px;
-            border-spacing: 0 5px;
-            flex-shrink: 0;
-        }
-
         .table-header {
-            font-size: 30px;
-        } 
+            font-size: 2rem;
+            background-color: lighten($primary-color, 5%);
+            border-radius: 10px;
+            box-shadow: 3px 3px darken($primary-color, 15%);
+        }
     }
 }
 
 
 /* extra info banner along bottom */
 .info {
-    background-color:$primary-color;
-    opacity: 80%;
+    background-color: lighten($primary-color, 5%);
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px darken($primary-color, 15%);
 }

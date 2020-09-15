@@ -29,15 +29,12 @@
             /* right container side with form */
             background: lighten($secondary-color, 10%);
             display: flex;
-            padding: 0 20px;
-            border-radius: 0 10px 10px 0;
-            
+            border-radius: 10px;
             form {
                 /*Form styling */
                 padding: 10px;
                 margin-top: 20px;
-                min-height: 80%;
-                .form-header {
+                    .form-header {
                     font-size: 2rem;
                 }
                 .set {
@@ -61,7 +58,6 @@
                         margin-left: 10px;
                         padding: 2px;
                     }
-                    
                     #message {
                         /*Message textarea */
                         margin-left: 10px;
@@ -145,16 +141,11 @@
 
 /* Mobile styles (Tablet and smaller)*/
 @media only screen and (max-width: 768px) {
-    .booking-container {
-        .left-container {
+         .left-container {
             display: none;
         }
-        .right-container {
-            border-radius: 10px;
-            .set div {
-                margin: 5px 0;
-            }
+        .set div {
+        // margin: 5px 0;
         }
-    }
 }
 

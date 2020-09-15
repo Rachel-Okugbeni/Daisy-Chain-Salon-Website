@@ -5,49 +5,49 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 20px;
-}
-
-/* logo image */
-.logo {
-  width: 30vw;
   margin: 0px;
 }
 
+/* Logo Image */
+.logo {
+  width: 20vw;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
 /* Navigation links */
-nav ul {
+.menu {
   text-align: center;
-  margin: 10px 0;
 }
 
-nav ul li {
+.menu .list-item {
   display: inline-block;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
-nav ul li a {
+.menu .list-item .nav-link {
   text-decoration: none;
   color: #000000;
 }
 
-nav ul li a:hover {
+.menu .list-item .nav-link:hover {
   color: #ffd23f;
 }
 
-nav ul li #booking {
-  /* Book Now button */
+.menu .list-item #booking {
+  /* Book Now link */
   background-color: #ffd23f;
   padding: 5px;
   color: #000000;
   border-radius: 5px;
 }
 
-nav ul li #booking:hover {
+.menu .list-item #booking:hover {
   background-color: #92b9bd;
 }
 
 /*STYLE HOME PAGE */
 .home {
-  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,15 +56,14 @@ nav ul li #booking:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 20px;
-  margin: 0;
+  padding: 20px;
   border-radius: 10px;
   background-color: #b2cdd0;
 }
 
 .home .hero-image {
   /* main image */
-  margin: 20px;
+  margin: 0 10px;
   height: 75vh;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px #82afb3;
@@ -74,7 +73,7 @@ nav ul li #booking:hover {
 .home .about {
   width: 50vw;
   height: 75vh;
-  margin: 20px;
+  margin: 0 10px;
   border-radius: 10px;
   background-color: #d2e2e3;
   -webkit-box-shadow: 5px 5px #82afb3;
@@ -96,6 +95,8 @@ nav ul li #booking:hover {
     display: none;
   }
   .about {
+    border: 1px solid black;
+    padding-bottom: 10px;
     margin: 5px;
     min-width: 95vw;
   }
@@ -287,15 +288,13 @@ nav ul li #booking:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 20px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
 }
 
 .main .booking-container .right-container form {
   /*Form styling */
   padding: 10px;
   margin-top: 20px;
-  min-height: 80%;
 }
 
 .main .booking-container .right-container form .form-header {
@@ -414,13 +413,7 @@ nav ul li #booking:hover {
 
 /* Mobile styles (Tablet and smaller)*/
 @media only screen and (max-width: 768px) {
-  .booking-container .left-container {
+  .left-container {
     display: none;
-  }
-  .booking-container .right-container {
-    border-radius: 10px;
-  }
-  .booking-container .right-container .set div {
-    margin: 5px 0;
   }
 }

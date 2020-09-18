@@ -282,7 +282,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60vw;
+  width: 65vw;
   height: auto;
   border-radius: 10px;
   padding: 0 5px 0 0;
@@ -364,7 +364,7 @@ body {
   display: inline-block;
   padding: 5px;
   margin-left: 10px;
-  width: 13vw;
+  width: 15vw;
   min-width: 200px;
 }
 

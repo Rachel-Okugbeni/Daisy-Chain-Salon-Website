@@ -186,6 +186,7 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 15px;
+  min-width: 212px;
   width: 20vw;
 }
 

@@ -2,7 +2,7 @@
 
 .main {
     display: inline-block;
-    font-size: 0.85rem;
+    font-size: 0.85em;
     box-sizing: border-box;
     margin: 10px 0;
     padding: 0;
@@ -10,18 +10,15 @@
     .booking-container {
         /* Overall container */
         display: flex;
-        width: 65vw;
-        height: auto;
+        margin: auto;
+        width: 80%; 
+        height: 600px;
         border-radius: 10px;
         padding: 0 5px 0 0;
         background-color: lighten($secondary-color, 10%);
         box-shadow: 5px 5px darken($secondary-color, 5%);
        
-        .left-container {
-            /* left side with image container */
-            background-image: url('../assets/BookingImg.jpg');
-            background-size: cover;
-            min-width: 40vh;
+        .bookingImg {
             border-radius: 10px 0 0 10px;
         }
         
@@ -42,12 +39,13 @@
                     display: flex;
                     flex-wrap: wrap;
                     padding: 10px;
+                    border: none;
                     input,
                     select {
                         margin: 0 10px;
                         border-radius: 4px;
                         border: 1px solid transparent;
-                        height: 3.5vh;
+                        height: 30px;
                         display: inline-block;
                         padding: 5px;
                         font-family: inherit;
@@ -69,54 +67,21 @@
                         border: none;
                     } 
                 }            
-                .serviceType {
-                    .radio-container {
-                        /*services selector */
-                        background: #fff;
-                        border-radius: 4px;
+                    #bridal,
+                    #bridalLabel {
+                        /* bridal checkbox */
                         display: inline-block;
-                        padding: 5px;
-                        margin-left: 10px;
-                        width: 15vw;
-                        min-width: 200px;
-                        label {
-                            background: transparent;
-                            border: none;
-                            border-radius: 2px;
-                            display: inline-block;
-                            height: 3vh;
-                            line-height: 3vh;
-                            text-align: center;
-                            transition: .2s all ease-in-out;
-                            width: 4vw;
-                            min-width: 60px;
-                            margin: 0;
-                        }
-                        input[type="radio"] {
-                            display: none;
-                        }
-                        input[type="radio"]:checked + label {
-                            background: $primary-color;
-                        }                     
+                        vertical-align: middle;
+                        padding: 5px 0;
+                        font-size: 0.8em;
                     }
-                        #bridal,
-                        #bridalLabel {
-                            /* bridal checkbox */
-                            display: inline-block;
-                            vertical-align: middle;
-                            height: 2vh;
-                            line-height: 2vh;
-                            padding: 5px 0;
-                        }
-                }
-                    .dates input {
-                        min-width: 8vw;
-                        height: 3.3vh;
-                    }
-                    .times {
+                    .times,
+                    .dates,
+                    .serviceType {
                         select {
                             height: 4.6vh;
-                            min-height: 30px;
+                            height: 30px;
+                            width: 200px;
                         }
                     }
                 button {
@@ -143,6 +108,10 @@
 @media only screen and (max-width: 768px) {
          .left-container {
             display: none;
+        }
+        .booking-container {
+            width: 88vw !important;
+            height: auto !important;
         }
 }
 

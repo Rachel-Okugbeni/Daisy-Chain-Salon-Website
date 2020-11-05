@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/favicon.ico" />
     <link rel="stylesheet" href="../css/main.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
     <title>Daisy Chain Hair & Beauty</title>
 </head>
 <body>
   <header>
-      <!-- Logo & Nav bar -->
-      <div id="nav-placeholder">
-      </div>
+    <main-header></main-header>
   </header>
 
     <div class="main">
         <div class="booking-container">
             <div class="left-container">
+                <img class="bookingImg" src="/assets/BookingImg.jpg" alt="Woman with red glossy lipstick">
             </div>
             <div class="right-container">
                 <form> 
                     <header class="form-header">Book Appointment</header>
                     <p>We will contact you to confirm your appointment within 48 hours of your preferred date, if you don't hear from us please get in touch.</p>
-                    <div class="set">
+                  <fieldset class="set">
                         <div class="name">
                             <label for="name">Name</label>
                             <input id="name" name="name" type="text" placeholder="Name" required></input>
@@ -36,9 +35,9 @@
                             <label for="number">Phone Number</label>
                             <input id="number" name="number" type="text" placeholder="Phone Number" required></input>
                         </div>
-                    </div>
+                  </fieldset>
                     
-                    <div class="set">
+                  <fieldset class="set">
                         <div class="dates">
                             <label for="dates">Preferred Date</label>
                             <input id="dates" name="dates" type="date" placeholder="dd/mm/yy" required></input>
@@ -53,27 +52,24 @@
                             </select>
                         </div>
                         <div class="serviceType">
-                            <label for="serviceType">Which service do you require?</label>
-                            <div class="radio-container">
-                                <input id="serviceType-hair" name="serviceType" type="radio" value="hair"></input>
-                                <label for="serviceType-hair">Hair</label>
-                                <input id="serviceType-face" name="serviceType" type="radio" value="face"></input>
-                                <label for="serviceType-face">Face</label>
-                                <input id="serviceType-nails" name="serviceType" type="radio" value="nails"></input>
-                                <label for="serviceType-nails">Nails</label>
-                            </div>
+                            <label for="serviceType">Select Service</label>
+                            <select class="serviceType" id="serviceType" required>
+                                <option value="hair">Hair</option>
+                                <option value="face">Face</option>
+                                <option value="nails">Nails</option>
+                            </select>
                             <div>
                                 <input id="bridal" name="serviceType" type="checkbox" value="bridal"></input>
                                 <label for="bridal" id="bridalLabel">Bridal Consultation?</label>
                             </div>
                         </div>                      
-                    </div>         
-                    <div class="set">
+                  </fieldset>         
+                  <fieldset class="set">
                             <div class="message">
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" type="text" placeholder="Please include a brief description of what you're looking for e.g. Wash & Blow Dry/Cut & Colour" required></textarea>
                             </div>
-                    </div>
+                  </fieldset>
                     <div class="submit">
                         <button id="submit" name="submit" type="submit">Request Appointment</button>
                     </div>
@@ -82,11 +78,6 @@
         </div>
     </div>
 
-<!-- Link to nav.html -->
-  <script>
-      $(function(){
-        $("#nav-placeholder").load("./nav.html");
-      });
-  </script>
+    <script src="/js/header.js"></script>
 </body>
 </html>

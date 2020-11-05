@@ -160,6 +160,17 @@ body {
   color: #d8a500;
 }
 
+.home .about #booking {
+  background-color: #ffd23f;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.home .about #booking:hover {
+  color: inherit;
+  background-color: #ffc60c;
+}
+
 @media only screen and (max-width: 1024px) {
   .hero-image {
     width: 40vw;
@@ -178,8 +189,11 @@ body {
     margin: 5px;
     min-width: 95vw;
   }
+}
+
+@media only screen and (max-width: 320px) {
   .logo {
-    width: 80%;
+    width: 250px;
   }
 }
 
@@ -372,7 +386,7 @@ body {
 /*STYLE BOOKING PAGE */
 .main {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.85em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 10px 0;
@@ -384,8 +398,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 65vw;
-  height: auto;
+  margin: auto;
+  width: 80%;
+  height: 600px;
   border-radius: 10px;
   padding: 0 5px 0 0;
   background-color: #b2cdd0;
@@ -393,11 +408,7 @@ body {
           box-shadow: 5px 5px #82afb3;
 }
 
-.main .booking-container .left-container {
-  /* left side with image container */
-  background-image: url("../assets/BookingImg.jpg");
-  background-size: cover;
-  min-width: 40vh;
+.main .booking-container .bookingImg {
   border-radius: 10px 0 0 10px;
 }
 
@@ -428,6 +439,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 10px;
+  border: none;
 }
 
 .main .booking-container .right-container form .set input,
@@ -435,7 +447,7 @@ body {
   margin: 0 10px;
   border-radius: 4px;
   border: 1px solid transparent;
-  height: 3.5vh;
+  height: 30px;
   display: inline-block;
   padding: 5px;
   font-family: inherit;
@@ -459,58 +471,21 @@ body {
   border: none;
 }
 
-.main .booking-container .right-container form .serviceType .radio-container {
-  /*services selector */
-  background: #fff;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 5px;
-  margin-left: 10px;
-  width: 15vw;
-  min-width: 200px;
-}
-
-.main .booking-container .right-container form .serviceType .radio-container label {
-  background: transparent;
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  height: 3vh;
-  line-height: 3vh;
-  text-align: center;
-  -webkit-transition: .2s all ease-in-out;
-  transition: .2s all ease-in-out;
-  width: 4vw;
-  min-width: 60px;
-  margin: 0;
-}
-
-.main .booking-container .right-container form .serviceType .radio-container input[type="radio"] {
-  display: none;
-}
-
-.main .booking-container .right-container form .serviceType .radio-container input[type="radio"]:checked + label {
-  background: #ffd23f;
-}
-
-.main .booking-container .right-container form .serviceType #bridal,
-.main .booking-container .right-container form .serviceType #bridalLabel {
+.main .booking-container .right-container form #bridal,
+.main .booking-container .right-container form #bridalLabel {
   /* bridal checkbox */
   display: inline-block;
   vertical-align: middle;
-  height: 2vh;
-  line-height: 2vh;
   padding: 5px 0;
+  font-size: 0.8em;
 }
 
-.main .booking-container .right-container form .dates input {
-  min-width: 8vw;
-  height: 3.3vh;
-}
-
-.main .booking-container .right-container form .times select {
+.main .booking-container .right-container form .times select,
+.main .booking-container .right-container form .dates select,
+.main .booking-container .right-container form .serviceType select {
   height: 4.6vh;
-  min-height: 30px;
+  height: 30px;
+  width: 200px;
 }
 
 .main .booking-container .right-container form button {
@@ -534,5 +509,9 @@ body {
 @media only screen and (max-width: 768px) {
   .left-container {
     display: none;
+  }
+  .booking-container {
+    width: 88vw !important;
+    height: auto !important;
   }
 }
